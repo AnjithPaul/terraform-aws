@@ -17,7 +17,7 @@ resource "aws_subnet" "my_subnet" {
 
 resource "aws_network_interface" "foo" {
   subnet_id   = aws_subnet.my_subnet.id
-  private_ips = ["192.168.3.64"]
+  private_ips = ["192.168.3.33"]
 
   tags = {
     Name = "ec2_iac_network_interface"
